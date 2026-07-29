@@ -81,6 +81,15 @@ print(Pessoa.ano_atual)  # 2027 (O atributo da classe NÃO foi modificado!)
 print(p1.__dict__)
 print(Pessoa.__dict__)
 
+# =================================================
+# O que é a função vars()?
+# vars() é uma função built-in (nativa) do Python.
+# Quando você passa um objeto como argumento para ela (vars(objeto)), ela retorna exatamente o __dict__ desse objeto.
+
+print("*" * 20)
+print(p1.__dict__)
+print(vars(p1))
+
 """
 Resumo
 ------
