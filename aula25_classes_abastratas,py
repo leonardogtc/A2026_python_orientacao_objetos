@@ -1,0 +1,21 @@
+from abc import ABC, abstractmethod
+
+class Conta(ABC):
+    def __init__(self, saldo):
+        self._saldo = saldo
+
+    # Exige que a subclasse defina a propriedade 'saldo'
+    @property
+    @abstractmethod
+    def saldo(self):
+        pass
+
+
+class ContaCorrente(Conta):
+    @property
+    def saldo(self):
+        return self._saldo
+
+
+cc = ContaCorrente(1500.0)
+print(cc.saldo)  # 1500.0
