@@ -66,3 +66,23 @@ c1.salvar()
 p1 = Produto("Notebook", 4500.0)
 p1.comprar()
 # Output: [LOG - Produto]: Produto Notebook (R$4500.0) foi comprado.
+
+"""
+Classe Normal vs Mixin
+======================
+------------------------------------------------------------------------    
+Classe Normal                   |   Mixin
+------------------------------------------------------------------------
+Representa um objeto completo   |   Representa um comportamento extra
+(ex: Pessoa, Carro).            |   (ex: LogMixin, JSONMixin).
+------------------------------------------------------------------------
+Criada para ser instanciada     |   Nunca é instanciada diretamente
+(p = Pessoa()).	                |   (m = Mixin() ❌).
+------------------------------------------------------------------------
+Define o domínio e o estado do  |   É agnóstica ao objeto e adiciona 
+objeto (self.nome, self.idade).	|   apenas métodos reutilizáveis.
+------------------------------------------------------------------------
+Geralmente usa Herança Simples. |	É aplicada via Herança Múltipla 
+                                |   (class Cliente(Pessoa, LogMixin):).
+------------------------------------------------------------------------
+"""
