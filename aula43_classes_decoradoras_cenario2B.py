@@ -1,6 +1,7 @@
 """
 Exemplo 2: Registrador de Classes (Padrão de Projeto Registry)
-Outra aplicação muito comum é registrar classes automaticamente quando o arquivo é importado (muito usado em frameworks web como Flask/Django ou engines de jogos)
+Outra aplicação muito comum é registrar classes automaticamente quando o arquivo
+é importado (muito usado em frameworks web como Flask/Django ou engines de jogos)
 """
 
 CLASSES_REGISTRADAS = {}
