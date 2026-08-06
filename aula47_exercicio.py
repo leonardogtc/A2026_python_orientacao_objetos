@@ -52,8 +52,6 @@ class Pessoa(ABC):
     def idade(self) -> int:
         return self._idade
 
-    
-
 
 class Conta(ABC):
     def __init__(self, agencia: int, numero: int, saldo: float = 0.0):
